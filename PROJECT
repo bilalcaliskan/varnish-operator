@@ -1,0 +1,19 @@
+domain: docker.io
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: varnish-operator
+repo: github.com/bilalcaliskan/varnish-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: docker.io
+  group: cache
+  kind: Varnish
+  path: github.com/bilalcaliskan/varnish-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"
