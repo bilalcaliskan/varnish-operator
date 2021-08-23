@@ -15,3 +15,8 @@ Build and push your operator’s image:
 ```shell
 make docker-build docker-push IMG="docker.io/bilalcaliskan/varnish-operator:v0.0.1"
 ```
+
+### Development
+This project requires below tools while developing:
+- [pre-commit](https://pre-commit.com/)
+- [golangci-lint](https://golangci-lint.run/usage/install/) - required by [pre-commit](https://pre-commit.com/)
